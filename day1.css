@@ -1,0 +1,42 @@
+body
+{
+   background-image: url("day1.jpg"); 
+    font-family:Luckiest Guy;
+    background-size: cover;
+    background-position: center  ;  
+    font-size: 35px;
+
+}
+.keys{
+    text-align: center;
+    padding: 10px;
+    color: khaki;
+}
+#pads{
+    padding-top: 2%;
+    padding-left: 25%;
+    padding-right: 25%;
+    transition: 0.5s;
+}
+h1{
+    padding-left: 30%;
+    padding-right: 25%;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 100px;
+    font-family: Staatliches;
+    color:yellowgreen;
+}
+kbd{
+    font-family: Luckiest Guy;
+    padding-right:3%; 
+}
+#fb{
+    color:khaki;
+}
+#insta
+{
+    color:khaki;
+
+}
+
