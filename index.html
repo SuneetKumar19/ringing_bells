@@ -1,71 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-<title>Ringing keys</title>
-<link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Staatliches' rel='stylesheet'>
+
+        <title>Timer</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Audiowide|Merienda|Pacifico|Ultra&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
- 
-</head>
-<body>
-      <a href="https://www.facebook.com/">  <i class="fab fa-facebook-f" id="fb"></i></a>
-      <a href="https://www.instagram.com"><i class="fab fa-instagram" id="insta"></i></a>
-      
-     <h1>   <i class="fas fa-music  "></i>   Ringing Bells  <i class="fas fa-music"></i> </h1> 
-    <div class="keys" id="pads">
-        <div data-key="65" class="keys">
-            <kbd>A</kbd>
-            <span class="sound" id="65">bubbles</span>
-        </div>
 
-        <div data-key="83" class="keys">
-            <kbd>S</kbd>
-          <span class="sound"  id="83">clay</span>
-        </div>
+<link rel="icon" href="timericon.ico" type="image/x-icon" />
 
-        <div data-key="68" class="keys">
-                <kbd>D</kbd>
-            <span class="sound"  id="68">confetti</span>
-        </div>
-
-        <div data-key="70" class="keys">
-            <kbd>F</kbd>
-            <span class="sound"  id="70">corona</span>
-        </div>
-
-        <div data-key="71" class="keys">
-            <kbd>G</kbd>
-            <span class="sound"  id="71">spiral</span>
-        </div>  
-
-        <div data-key="72" class="keys">
-                <kbd>H</kbd>
-                <span class="sound"  id="72">flash</span>
-         </div> 
-
-          <div data-key="74" class="keys">
-              <kbd>J</kbd>
-              <span class="sound"  id="74">veil</span>
-          </div>  
-         <div data-key="75" class="keys">
-               <kbd>K</kbd>
-              <span class="sound"  id="75">suspension</span>
-         </div>  
-    </div>
-    <span id="music">
-    <audio data-key="65" src="1.mp3" id ="65x"></audio>
-    <audio data-key="83" src="2.mp3" id ="83x"></audio>
-    <audio data-key="68" src="3.mp3" id ="68x"></audio>
-    <audio data-key="70" src="4.mp3" id ="70x"></audio>    
-    <audio data-key="71" src="5.mp3" id ="71x"></audio>
-    <audio data-key="72" src="6.mp3" id ="72x"></audio>
-    <audio data-key="74" src="7.mp3" id ="74x"></audio>
-    <audio data-key="75" src="8.mp3" id ="75x"></audio>
-    </span>
+ </head>
+ <body>
+     <div class="container">
+         <div class="row">
+             <div class="col my-col1" id="20sec">20 Seconds</div>
+             <div class="col my-col2" id="5min">Snap 5</div>
+             <div class="col my-col3" id="15min">Quick 15</div>
+             <div class="col my-col4" id="30min">Lunch time</div>
+             <!-- <div class="col"></div> -->
+             <div class="col my-col5" id="form"><form name="formx"><input name="minutes" type="text" placeholder="Enter Minutes"></form>  </div>
+         </div>
+     </div>
+     <div class="maindisplay">Set Time </div>
+     <div class="displaytime">Return time</div>
+     <div class="container">
+         <div class="row">
+             <div class="col reset" id="re" > Reset </div>
+             <div class="col"></div>
+             <div class="col"></div>
+             <div class="col"></div>
+             <div class="col"></div>
+             <div class="col"></div>
+             <div class="col"></div>
+             <div class="col"></div>
+             <div class="col"></div>
+             <div class="col"></div>
+             
+         </div>
+         </div>
 
 
+     <audio id="player" src="1.mp3"></audio>
 
-    <script src="day1.js"></script> 
-    <link rel="stylesheet" href="day1.css">
-</body>
-</html>
+     <link rel="stylesheet" type="text/css" href="timer.css">
+        <script src="timer.js"></script>
+ </body>
+
+ </html>
